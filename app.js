@@ -12,7 +12,7 @@ app.use(expressSanitizer());
 app.use(methodOverride("_method"));
 mongoose.set('useFindAndModify', false);
 
-mongoose.connect("mongodb://localhost:27017/todoApp", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://albert:albert@4444@cluster0.vehvp.mongodb.net/todoApp?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
 
 var blogSchema= new mongoose.Schema({
 	title: String,
